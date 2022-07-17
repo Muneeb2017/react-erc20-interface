@@ -10,7 +10,7 @@ const Wallet = () => {
 
   const [errorMessage, setErrorMessage] = useState(null);
   const [defaultAccount, setDefaultAccount] = useState(null);
-  const [connButtonText, setConnButtonText] = useState("Connect Wallet");
+  const [connButtonText, setConnButtonText] = useState("Connect MetaMask");
 
   const [provider, setProvider] = useState(null);
   const [signer, setSigner] = useState(null);
@@ -110,7 +110,7 @@ const Wallet = () => {
 
   return (
     <div>
-      <h2> {tokenName + " ERC-20 Wallet"} </h2>
+      <h2> { " React-Erc20-Interface"} </h2>
       <button className={styles.button6} onClick={connectWalletHandler}>
         {connButtonText}
       </button>
